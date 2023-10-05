@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	char gramm1;
+	char gramm1 = 'a';
 
 	printf("with proper grammar, but the outcome is a piece of art,%c\n", gramm1);
 	return (0);
