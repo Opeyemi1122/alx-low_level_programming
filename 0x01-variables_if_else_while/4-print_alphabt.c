@@ -11,10 +11,10 @@ int main(void)
 	/**
 	 * characters are*
 	 */
-	char alph[26] = "abcdfghijklmnoprstuvwxyz";
+	char alph[24] = "abcdfghijklmnoprstuvwxyz";
 	int i;
 
-	for (i = 0; i < 52; i++)
+	for (i = 0; i < 24; i++)
 	{
 		putchar(alph[i]);
 	}
