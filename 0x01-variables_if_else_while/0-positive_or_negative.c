@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-/*
- *this program is to check if n is negative or positive
+/**
+ *main - Determines if a number is positive, negative or zero.
+ *
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
+	/*
+	 * function to check random number is positive or negative
+	 */
 	int n;
 
 	srand(time(0));
