@@ -8,37 +8,24 @@
  */
 int main(void)
 {
-	int i, e, g;
 
-	i = 48;
-	e = 48;
-	g = 48;
+	int d, p;
 
-	while (e < 58)
+	for (d = '0'; d < '9'; d++)
 	{
-		i = 48;
-		while (i < 58)
-		{
-			g = 48;
-			while (g < 58)
-			{
-				if (e != i && e != g && i != g && e < i && i < g)
-				{
-					putchar(e);
-					putchar (i);
-					putchar(g);
-					if (i == 56 && e == 55 && g == 57)
-					}
-						break;
-					}
-					putchar(',');
-					putchar(' ');
-				}
-				g++;
-			}
-			i++;
-		}
-		e++;
+
+	for (p = d + 1; p <= '9'; p++)
+	{
+	if (p != d)
+	{
+	putchar(d);
+	putchar(p);
+	if (d == '8' && p == '9')
+	continue;
+	putchar(',');
+	putchar(' ');
+	}
+	}
 	}
 	putchar('\n');
 	return (0);
