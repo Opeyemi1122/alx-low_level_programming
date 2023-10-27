@@ -6,10 +6,10 @@
 
 /**
  * _abs - computes the absolute value of an integer
- * @a: gives integer value
+ * @n: gives integer value
  * Return: Always 0 (Success)
  */
 int _abs(int n)
 {
-	return abs(n);
+	return (abs(n));
 }
