@@ -11,17 +11,18 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	if (b == NULL)
-		return (0);/* no string to convert*/
 	unsigned int result = 0;
 
-	for (const char *c = b; *c != '\0'; c++)
+	if (b == NULL)
+		return (0);/* no string to convert*/
+
+	for (; *b != '\0'; b++)
 	{
-		if (*c != '0' && *c != '1')
+		if (*b != '0' && *b != '1')
 		{
 			return (0);
 		}
-		result = result * 2 + (*c - '0');
+		result = result * 2 + (*b - '0');
 	}
 	return (result);
 }
